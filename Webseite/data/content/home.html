@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WebOPAC HGG</title>    
+    <link href="main.css?v2" rel="stylesheet" />
+    <link href="fonts.css" rel="stylesheet" />
+    <?php
+    if(isset($_GET['login'])){
+    ?>
+    <link href="book.css" rel="stylesheet" />
+    <?php } ?>
+</head>
+<body>
+    <header>
+        <img src="media/hgg.png" />
+        <label><a href="?id=home">Online-Bibliothek</a></label>
+        <label><b>H</b>ans <b>G</b>rüninger <b>G</b>ymnasium</label>
+    </header>
+    <div id="leftdrawer">
+        <a href="?id=home">Home</a>
+        <a href="?id=katalog">Katalog</a>
+        <input style="display:none;" type="checkbox" id="c1" />
+        <span>
+            <label for="c1">Mein Konto</label>            
+            <a href="?id=addbook">Vorbestellen</a>
+            <a href="?id=mybooks">Ausgeliehene Bücher</a>
+            <a href="?id=profile">Profil</a>
+        </span>
+        <a href="?login">Anmelden</a>
+    </div>
+    <div id="content">
+        <?php 
+        if(isset($_GET['login'])){
+        ?>
+        <div id="wrapper">
+            <div id="container">
+
+                <section class="open-book">
+                    <header style="background-color:transparent; height:auto;">
+                        <h1>WebOPAC</h1>
+                        <h6>Hans Grüninger Gymnasium</h6>
+                    </header>
+                    <article>
+                        <h2 class="chapter-title">Anmelden</h2>
+                        <p>
+                            Bitte melde dich an um auf alle Funktionen des WebOPACs zugreifen zu können!
+                        </p>
+                        <div style="height:50%;display:table; vertical-align:central">
+                            <dl style="display:table-cell; padding:10px 20px;">
+                                <dt><strong>Meine Daten</strong></dt>
+                                <dd>
+                                    <style>
+                                        form{
+                                            background:#8b4513;
+                                            text-align:center;
+                                            padding:5px;
+                                            border-radius:5px;
+                                        }
+                                        input {
+                                            width:200px;
+                                            padding:5px 10px;
+                                            border:2px solid #8b4513;
+                                            margin:100px;
+                                            border-radius:5px;
+                                        }
+                                        input[type=submit]{
+                                            background:#8b4513;
+                                            cursor:pointer;
+                                            color:white;
+                                        }
+                                        input[type=submit]:hover {
+                                            border:2px solid #e5e5e5;
+                                        }
+                                    </style>
+                                    <form method="post">
+                                        <input type="text" placeholder="SchülerID" />
+                                        <br />
+                                        <input type="password" placeholder="Passwort" />
+                                        <br />
+                                        <input type="submit" value="Anmelden" />
+                                    </form>
+                                </dd>
+                            </dl>
+                        </div>
+                        
+                    </article>
+                    <footer>
+                        <ol id="page-numbers">
+                            <li>1</li>
+                            <li>2</li>
+                        </ol>
+                    </footer>
+                </section>
+
+            </div>
+        </div>
+        <?php
+        }else{
+        ?>
+        <h2>Herzlich Wilkommen!</h2>
+        <p>
+            Das ist er WebOPAC des HGGs. Hier findest du alle Bücher, die es im HGG gibt.
+            <br/>
+            Manche sind für den Unterricht bestimmt und andere kannst du gerne in der Mediathek ausleihen oder hier online vorbestellen.
+            <br/>
+            Schau einfach links im Menü nach.
+            <br/>
+            <br/>
+            Wenn du dich anmeldest kannst du auch immer genau sehen, welche Bücher du ausgeliehen hast und welche du (noch) abgeben musst!
+        </p>
+        <?php } ?>
+    </div>
+</body>
+</html>

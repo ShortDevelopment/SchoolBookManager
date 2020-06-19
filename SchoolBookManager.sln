@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SchoolBookManager", "SchoolBookManager\SchoolBookManager.vbproj", "{2564077C-069F-49AB-8088-8398315EEADD}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Webseite", "Webseite\Webseite.vbproj", "{E464C652-24DD-45E5-944B-4BA619510E79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2564077C-069F-49AB-8088-8398315EEADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2564077C-069F-49AB-8088-8398315EEADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2564077C-069F-49AB-8088-8398315EEADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2564077C-069F-49AB-8088-8398315EEADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E464C652-24DD-45E5-944B-4BA619510E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E464C652-24DD-45E5-944B-4BA619510E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E464C652-24DD-45E5-944B-4BA619510E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E464C652-24DD-45E5-944B-4BA619510E79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
